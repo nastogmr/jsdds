@@ -316,14 +316,14 @@ client.on('message', msg => {
  
  
   client.on("message", message => {
-    if (message.content === "$help") {
+    if (message.content === "_help") {
      const embed = new Discord.RichEmbed()
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
-       $invites | لمعرفة عدد انفايتاتك
-       $new | لإنشاء تكت
-       $giveaway  |  لإعداد قيفاواي
+       _invites | لمعرفة عدد انفايتاتك
+       _new | لإنشاء تكت
+       _giveaway  |  لإعداد قيفاواي
        ** `)
    message.author.sendEmbed(embed)
    
